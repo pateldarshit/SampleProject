@@ -5,7 +5,6 @@ from . import views
 
 router = DefaultRouter()
 router.register(r"manifesto_item", views.ManifestoItemViewSet)
-router.register(r"user", views.UserViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
